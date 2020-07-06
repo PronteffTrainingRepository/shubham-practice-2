@@ -1,4 +1,12 @@
 import React from 'react';
 
-export const Greet = () => <h1>Hello Shubham</h1>;
+const Greet = (props) => {
+    return (
+        <div>
+            <h1>Myself {props.name} MY location is {props.location}</h1>
+            {props.children}
+            </div>
+    )
+}
 
+export default Greet;
